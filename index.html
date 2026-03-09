@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Sunrise Hotel Dashboard</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<h1>Sunrise Hotel</h1>
+<nav>
+<a href="#">Home</a>
+<a href="#">About</a>
+<a href="#">Contact</a>
+</nav>
+</header>
+
+<section class="section">
+
+<h2>Welcome to Sunrise Hotel</h2>
+<p>Please login to continue</p>
+
+<form id="loginForm">
+
+<input type="text" id="username" placeholder="Enter Username" required>
+
+<input type="password" id="password" placeholder="Enter Password" required>
+
+<select id="role" required>
+<option value="">Select Login Type</option>
+<option value="user">User</option>
+<option value="admin">Admin</option>
+</select>
+
+<button type="submit">Login</button>
+
+</form>
+
+<p>New user? <a href="signup.html">Signup here</a></p>
+
+<p id="message"></p>
+
+</section>
+
+<footer>
+<p>© 2026 Sunrise Hotel</p>
+</footer>
+
+<script src="login.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Room Booking</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<h1>Sunrise Hotel</h1>
+<nav>
+<a href="index.html">Logout</a>
+</nav>
+</header>
+
+<section class="section">
+
+<h2>Available Rooms</h2>
+
+<div class="room-container">
+
+<div class="room-card">
+<h3>Single Room</h3>
+<p>Price: ₹1500 / night</p>
+</div>
+
+<div class="room-card">
+<h3>Double Room</h3>
+<p>Price: ₹2500 / night</p>
+</div>
+
+<div class="room-card">
+<h3>Suite</h3>
+<p>Price: ₹4000 / night</p>
+</div>
+
+</div>
+
+</section>
+
+
+<section class="section">
+
+<h2>Room Booking</h2>
+
+<form id="bookingForm">
+
+<input type="text" id="name" placeholder="Enter your name" required>
+
+<input type="email" id="email" placeholder="Enter your email" required>
+
+<select id="roomType" required>
+<option value="">Select Room Type</option>
+<option value="Single">Single Room</option>
+<option value="Double">Double Room</option>
+<option value="Suite">Suite</option>
+</select>
+
+<input type="date" id="checkin" required>
+<input type="date" id="checkout" required>
+
+<button type="submit">Book Now</button>
+
+</form>
+
+<p id="message"></p>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>

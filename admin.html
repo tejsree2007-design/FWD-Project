@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Booking Details</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<h1>Booked Customers</h1>
+<nav>
+<a href="index.html">Logout</a>
+</nav>
+</header>
+
+<section class="section">
+
+<h2>Booking Details</h2>
+
+<table border="1" id="bookingTable">
+
+<thead>
+<tr>
+<th>Name</th>
+<th>Email</th>
+<th>Room Type</th>
+<th>Check-in</th>
+<th>Check-out</th>
+</tr>
+</thead>
+
+<tbody>
+</tbody>
+
+</table>
+
+</section>
+
+<script>
+
+let bookings = JSON.parse(localStorage.getItem("bookings")) || [];
+
+let tableBody = document.querySelector("#bookingTable tbody");
+
+bookings.forEach(function(booking){
+
+let row=document.createElement("tr");
+
+row.innerHTML = `
+<td>${booking.name}</td>
+<td>${booking.email}</td>
+<td>${booking.roomType}</td>
+<td>${booking.checkin}</td>
+<td>${booking.checkout}</td>
+`;
+
+tableBody.appendChild(row);
+
+});
+
+</script>
+
+</body>
+</html>
